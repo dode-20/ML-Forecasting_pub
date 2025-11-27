@@ -1,0 +1,45 @@
+{
+    "parameter_ranges": {
+        "epochs": {
+            "values": [1, 50, 75, 100, 150, 200],
+            "description": "Number of training iterations",
+            "type": "int"
+        },
+        "batch_size": {
+            "values": [8, 16, 32, 64, 128, 256],
+            "description": "Number of sequences processed simultaneously",
+            "type": "int"
+        },
+        "learning_rate": {
+            "values": [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.015],
+            "description": "Optimization step size",
+            "type": "float"
+        },
+        "hidden_size": {
+            "values": [8, 16, 32, 64, 128, 256],
+            "description": "Number of neurons per LSTM layer",
+            "type": "int"
+        },
+        "num_layers": {
+            "values": [1, 2, 3, 4, 5, 6],
+            "description": "Depth of the LSTM network",
+            "type": "int"
+        },
+        "dropout": {
+            "values": [0.05, 0.1, 0.2, 0.3, 0.4, 0.5],
+            "description": "Regularization strength between layers",
+            "type": "float"
+        },
+        "sequence_length": {
+            "values": [8, 16, 32, 64, 128, 256],
+            "description": "Number of sequences processed simultaneously",
+            "type": "int"
+        }
+    },
+    "experiment_settings": {
+        "base_config": "baseline_lstm_model_config.json",
+        "max_experiments_per_parameter": 5,
+        "timeout_minutes": 120,
+        "gpu_memory_limit": "8GB"
+    }
+}

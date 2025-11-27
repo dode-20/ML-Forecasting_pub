@@ -1,0 +1,24 @@
+{
+    "training_data_files": {
+        "silicon": "...repos/ML-forecasting/results/training_data/Silicon/cleanData/20240725_20250715/20240725_20250715_test_lstm_model_clean-10min_weather-integrated.csv",
+        "perovskite": ""
+    },
+    "validation_data_files": {
+        "silicon": "...repos/ML-forecasting/results/training_data/Silicon/cleanData/20250716_20250914/20250716_20250914_test_lstm_model_clean-10min_weather-integrated.csv",
+        "perovskite": ""
+    },
+    "fallback_directories": {
+        "silicon": [],
+        "perovskite": []
+    },
+    "exclusion_periods": [
+        ["2025-08-28", "2025-09-03"],
+        ["2025-08-24", "2025-08-27"],
+        ["2025-08-18", "2025-08-19"]
+    ],
+    "search_preferences": {
+        "resolution": "10min",
+        "weather_integrated": true,
+        "prefer_latest": true
+    }
+}

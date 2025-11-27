@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "influxdata-api"
+version = "0.1.0"
+description = "FastAPI service exposing InfluxDB and module processing functions"
+authors = ["Dominik Demuth"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+pandas = "^2.2.2"
+python-dotenv = "^1.0.1"
+influxdb-client = "^1.41.0"
+pytz = "^2024.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

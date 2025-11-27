@@ -1,0 +1,31 @@
+# Python-spezifisch
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# Umgebungsdateien
+.env
+*.pkl
+
+# Modelldateien
+*.pth
+*.xgb
+*.joblib
+.venv_ML
+training_data/
+influxData_api/data/csv_files_2023_private
+/results/
+offline_tests/experimental_scenarios/model_settings/experiments
+offline_tests/extra_tools
+
+*/archive/
+*/models/
+*.png

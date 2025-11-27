@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dashboard"
+version = "0.1.0"
+description = "Streamlit Dashboard for PV Forecasting"
+authors = ["Your Name <your.email@example.com>"]
+packages = [{ include = "*" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.32.2"
+pandas = "^2.2.0"
+numpy = "^1.26.0"
+requests = "^2.31.0"
+sseclient-py = "^1.7.2"
+docker = "^7.0.0"
+psutil = "^5.9.8"
+plotly = "^5.22.0"
+jsonschema = "^4.22.0"
+pathlib = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

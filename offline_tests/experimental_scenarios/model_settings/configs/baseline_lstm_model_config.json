@@ -1,0 +1,54 @@
+{
+    "model_name": "baseline_lstm_model",
+    "model_type": "LSTM",
+    "module_type": "silicon",
+    "use_all_modules": "Use all modules of this type",
+    "selected_modules": "all",
+    "features": ["Irr"],
+    "time_features": [
+        "hour",
+        "weekday",
+        "month",
+        "day_of_year"
+    ],
+    "weather_data": {
+        "use_weatherData": true,
+        "weather_features": [
+            "TT_10",
+            "RF_10",
+            "RWS_10",
+            "RWS_IND_10",
+            "V_N"
+        ]
+    },
+    "output": [
+        "P_normalized"
+    ],
+    "date_selection": {
+        "mode": "custom",
+        "start": "2024-07-25",
+        "end": "2025-07-15"
+    },
+    "validation_set": {
+        "use_validation_set": "Yes",
+        "validation_split": 0.1
+    },
+    "epochs": 25,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "shuffle": false,
+    "loss_function": "MAE",
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "sequence_length": 36,
+    "early_stopping_patience": 10,
+    "data_resolution": "10min",
+    "balancing": {
+        "use_balancing": false
+    },
+    "forecast_mode": {
+        "mode": "multi-step",
+        "forecast_steps": 36
+    }
+}

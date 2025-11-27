@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "model_manager"
+version = "0.1.0"
+description = "Service for managing ML model containers and routing forecast/training requests"
+packages = [{ include = "*" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.0"
+docker = "^7.0.0"
+requests = "^2.31.0"
+pydantic = "^1.10.9"
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
